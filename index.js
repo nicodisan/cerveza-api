@@ -7,7 +7,7 @@ const db = require('./db');
 app.use(express.json());
 
 const apiRoutes = require('./routes/api');
-app.use('/api', apiRoutes);
+app.use('/', apiRoutes);
 
 app.get('/', (req, res) => {
   res.send('API de gestión de barriles funcionando');
